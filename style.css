@@ -1,0 +1,202 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background: rgb(196, 227, 237);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  overflow: hidden;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.MainContainer{
+  width: 80%;
+  height: 80vh;
+  background: white;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.box1{
+  width: 150px;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  flex: 0.5;
+  position: relative;
+  transition: flex 0.7s ease-in;
+  background-image: url('https://images.pexels.com/photos/847393/pexels-photo-847393.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.box1 h2{
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.box1.active{
+  flex: 3;
+}
+.box1.active h2{
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.box2{
+  width: 150px;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  flex: 0.5;
+  position: relative;
+  transition: flex 0.7s ease-in;
+  background-image: url('https://images.pexels.com/photos/52509/penguins-emperor-antarctic-life-52509.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.box2 h2{
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.box2.active{
+  flex: 3;
+}
+.box2.active h2{
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.box3{
+  width: 150px;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  flex: 0.5;
+  position: relative;
+  transition: flex 0.7s ease-in;
+  background-image: url('https://images.pexels.com/photos/1677116/pexels-photo-1677116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.box3 h2{
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.box3.active{
+  flex: 3;
+}
+.box3.active h2{
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.box4{
+  width: 150px;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  flex: 0.5;
+  position: relative;
+  transition: flex 0.7s ease-in;
+  background-image: url('https://images.pexels.com/photos/37833/rainbow-lorikeet-parrots-australia-rainbow-37833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+.box4 h2{
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.box4.active{
+  flex: 3;
+}
+.box4.active h2{
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+.box5{
+  width: 150px;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  flex: 0.5;
+  position: relative;
+  transition: flex 0.7s ease-in;
+  background-image: url('https://images.pexels.com/photos/247502/pexels-photo-247502.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.box5 h2{
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.box5.active{
+  flex: 3;
+}
+.box5.active h2{
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media(max-width:480px){
+  .MainContainer{
+    width: 100%;
+    height: 90vh;
+  }
+  .box4{
+    display: none;
+  }
+  .box5{
+    display: none;
+  }
+}
